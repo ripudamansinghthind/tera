@@ -1,45 +1,46 @@
 @media only screen and (min-width: 768px) {
     .logo-img {
-      float: left;
       width: 100px;
       margin: 1rem 2rem 0 2rem;
     }
       .navbar {
         overflow: hidden;
-        color: black;
         position: fixed;
-        right: 0;
+        color: rgba(56, 102, 65);
+        left: 0;
         top: 0;
         padding: 0;
-        width: 100%;
+        width: 25%;
+        height: 100%;
       }
       
       .nav-content {
-        flex: right;
         margin: 0;
       }
   
       .nav-items {
-        float: right;
-        margin: 1rem 2rem 0 0;
+        margin: 0 0 0 0;
       }
       
       .nav-item {
-        display: inline-flex;
-        flex: right;
-        font-size: 17px;
+        font-size: 22px;
+        list-style-type: none;
       }
       
       .clickyButton {
+        margin: 10px auto;
         padding: 10px 15px;
       }
       
       .resumeButton {
-        display: inline-flex;
-        flex: right;
-        border: solid 1px  #FF5733 ;
-        background-color:  rgba(56, 163, 165) ;
+        bottom: 1rem;
+        position: fixed;
+        background-color:  rgb(24, 83, 35) ;
         border-radius: 5px;
+        color: white;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 5px 60px;
       }
       
       .resumeButton a{

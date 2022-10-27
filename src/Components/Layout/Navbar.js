@@ -1,44 +1,61 @@
 import React from 'react';
-import Logo from '../resources/Logo.JPG';
+import Logo from '../resources/Logo.svg';
 import '../css/Navbar.css'
+import { motion } from 'framer-motion';
 
 const Navbar = (props) => {
   return (
-    <nav className="navbar" id="navbar">
+    <motion.nav className="navbar" id="navbar"
+        initial={{x: -250}}
+        animate={{x: 0}}>
           <div className="nav-content">
-          <img src={Logo} className="logo-img" alt='Logo' />
+          <motion.img 
+            src={Logo} 
+            className="logo-img" 
+            alt='Logo' 
+            initial={{x: -250}}
+            animate={{x: 0}}
+            />
             <ul className="nav-items">
-                <li className="nav-item">
-                  <div className="clickyButton">Home
-                  </div>
-                </li>
-                <li className="nav-item">
-                  <div className="clickyButton">About
-                  </div>
-                </li>
-                <li className="nav-item">
-                  <div className="clickyButton">Market
-                  </div>
-                </li>
-                <li className="nav-item">
+                <motion.li className="nav-item"
+                  initial={{x: -250}}
+                  animate={{x: 0}}>
                   <div className="clickyButton">Services
                   </div>
-                </li>
-                <li className="nav-item">
+                </motion.li>
+                <motion.li className="nav-item"
+                  initial={{x: -250}}
+                  animate={{x: 0}}>
+                  <div className="clickyButton">Team
+                  </div>
+                </motion.li>
+                <motion.li className="nav-item"
+                  initial={{x: -250}}
+                  animate={{x: 0}}>
                   <div className="clickyButton">Projects
                   </div>
-                </li>
-                <li className="nav-item">
-                  <div className="clickyButton">Testimonials
+                </motion.li>
+                <motion.li className="nav-item"
+                  initial={{x: -250}}
+                  animate={{x: 0}}>
+                  <div className="clickyButton">Blog
                   </div>
-                </li>
-                <li className="resumeButton">
-                  <div className="clickyButton">Free Consultation
+                </motion.li>
+                <motion.li className="nav-item"
+                  initial={{x: -250}}
+                  animate={{x: 0}}>
+                  <div className="clickyButton">Contact Us
                   </div>
-                </li>
+                </motion.li>
+                <motion.li className="resumeButton"
+                  initial={{x: -250}}
+                  animate={{x: 0}}>
+                  <div className="clickyButton">Get a quote
+                  </div>
+                </motion.li>
               </ul>
             </div>
-        </nav>
+        </motion.nav>
     );
 }
     
