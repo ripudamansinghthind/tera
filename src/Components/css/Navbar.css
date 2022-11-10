@@ -50,7 +50,8 @@
       }
       
       .clickyButton:hover {
-        color: white;
+        color: #999;
+        text-decoration: underline;
         transition: color 0.5s;
       }
       

@@ -1,23 +1,37 @@
 import React from 'react';
-import '../css/Careers.css';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
-const Careers = () => {
+
+const backdrop = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 }
+}
+
+const modal = {
+    hidden: { y: "-100vh", opacity: 0 },
+    visible: { 
+      y: "200px",
+      opacity: 1,
+      transition: { delay: 0.5 }
+    },
+  }
+
+const Modal = ({ showModal }) => {
   return (
-    <div className='card'>
-      <div className='row-card'>
-        <h3 className='title'>Interested in working here?</h3>
-      </div>
-      <div className='row-card'>
-        <h3 className='sub-title'>Come create a better future with us!</h3>
-      </div>
-      <div className='row-card'>
-        <p>Our application process at Cityview is simple and straightforward. If you spot a position you're interested in, just complete our short application.</p>
-      </div>
-      <div className='n-row-card'>
-        <p>A member of our team will look through your application and CV and reach out to you to schedule a meeting. This is not only your first moment to put your best foot forward, but also a moment to ask questions about your role, future opportunities, and judge if its the right fit.</p>
-      </div>
-      <div className='row-card'>
-      <form className='quote-form'>
+    <AnimatePresence exitBeforeEnter>
+        { showModal && (
+            <motion.div 
+            className='backdrop'
+            variants={backdrop}
+            initial='hidden'
+            animate='visible'>
+                <motion.div
+                    className="modal"
+                    variants={modal}>
+                            <p>Tera Asbestos</p>
+                            <p>Request a quote</p>
+                            <form className='quote-form'>
                                 <label>Name: 
                                     <input
                                         type='text'
@@ -49,9 +63,14 @@ const Careers = () => {
                                         name='username' />
                                 </label>
                             </form>
-      </div>
-    </div>
+                            <Link to="/">
+                            <button>Submit</button>
+                            </Link>
+                    </motion.div>
+                </motion.div>
+        )}
+    </AnimatePresence>
   )
 }
 
-export default Careers
+export default Modal

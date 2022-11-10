@@ -1,0 +1,17 @@
+.card {
+    margin-left: auto;
+    text-align: center;
+    color: black;
+    width: 80%;
+  }
+
+.row-card {
+  height: 100%;
+}
+
+.title {
+    margin: 0 auto;
+}
+.message {
+    margin: 0 auto;
+}
