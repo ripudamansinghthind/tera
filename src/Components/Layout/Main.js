@@ -7,6 +7,15 @@ import Img from '../resources/icon.webp';
 import Location from '../resources/location.png';
 import workSafeLogo from '../resources/worksafelogo.png'
 import SurreyCity from '../resources/SurreyCity.jpg'
+import CityViewImg from '../resources/CityViewLogo.png'
+
+import {
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 function Main() {
@@ -18,21 +27,27 @@ function Main() {
               <img src={ Img } alt = "Landing Page"/>
             </div>
             <div className='text-over-image'>
-              <img src={ workSafeLogo } className='safety-logo-cropper' alt = 'Safety Logo' />
-              <h1>Tera Asbestos and Hazmat Solutions Ltd.</h1>
-              <div>
-                <div className='consult button'>
-                  Free Consultation
+              <h1 className='image-text'>Tera Asbestos and Hazmat Solutions Ltd.</h1>
+              <div className='landing-buttons'>
+                <div className='consult-button'>
+                  <Link to="/">
+                    <div className="image-text-btn">Free Consultation
+                    </div>
+                  </Link>
                 </div>
-                <div className='consult button'>
-                  Contact Us
+                <div className='consult-button'>
+                  <Link to="/WhoWeAre">
+                    <div className="image-text-btn">Contact Us
+                    </div>
+                  </Link>
                 </div>
               </div>
+              <img src={ workSafeLogo } className='safety-logo-cropper' alt = 'Safety Logo' />
             </div>
           </div>
         <div className='row-card'>
           <h2>At Tera we specialize in removal or encapsulation of hazardous material, including lead and lead-based materials, mould and asbestos.</h2>
-          <p> We are proud to be fully insured, licensed and always working in compliance with WorkSafeBC. No matter the space, whether it's your home, business, or industrial site, we are locally owned and make sure you know all your options and help you choose the best treatment for your needs.</p>
+          <p className='para-text'> We are proud to be fully insured, licensed and always working in compliance with WorkSafeBC. No matter the space, whether it's your home, business, or industrial site, we are locally owned and make sure you know all your options and help you choose the best treatment for your needs.</p>
         </div>
       </div>
     <div className='repos'>
@@ -55,7 +70,7 @@ function Main() {
                 <br />
               </div>
           </div>
-          <div className="row-card">
+          <div className="row-card-img">
             <div className='row-card-column1'>
               <h2>Based in Surrey, serving all of Lower Mainland</h2>
               <p>Whether you own a home, a commercial business or an industrial site, we at Tera are here to remove hazardous materials from any of your properties.</p>
@@ -65,9 +80,12 @@ function Main() {
               <img src={ SurreyCity } alt = "Landing Page"/>
             </div>
           </div>
-          <div className='row-card'>
-            <div className='row-card-column1'>Meet our partners!</div>
-            <div className='row-card-column2'></div>
+          <div className='row-card-last'>
+            <h1>Learn more about our founding company!</h1>
+            <div>
+            <img className='partner-cropper' src={ CityViewImg } alt = "CityView Logo"/>
+            </div>
+            <a href='https://www.cityviewdrywall.com/' target="_blank" className="website-link" rel="noreferrer">Visit our website for more info!</a>
           </div>
         </div>
       </div>

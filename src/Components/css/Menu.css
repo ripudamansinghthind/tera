@@ -29,7 +29,7 @@ img {
   }
 
   .row-card {
-    margin: 0 auto;
+    margin: 150px auto;
     padding: 20px;
   }
 
@@ -38,19 +38,16 @@ img {
   }
 
   .box-card-left {
-    border: 1px solid #DB2A20;
     float: left;
     width: 33.333%;
   }
 
   .box-card-center {
-    border: 1px solid #DB2A20;
     display: inline-block;
     width: 33.333%;
   }
 
   .box-card-right {
-    border: 1px solid #DB2A20;
     display: inline-block;
     width: 33.333%;
   }
@@ -71,17 +68,41 @@ img {
     width: 50%;
   }
 
-  .safety-logo-cropper {
-    width: 30%;
+  .landing-buttons {
+    display: inline-flex;
     margin: 0;
+  }
+
+  .consult-button {
+    padding: 0 1px;
+    font-size: 17px;
+    opacity: 0.7;
+  }
+
+  .safety-logo-cropper {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
     padding: 0;
   }
   .text-over-image {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 20px;
     font-weight: bold;
+  }
+
+  .image-text {
+    margin: 0;
+  }
+
+  .image-text-btn {
+    color: white;
+    padding: 5px;
+  }
+
+  .image-text-btn:hover {
+    color: black;
   }
   .column-1-card {
     float: left;
@@ -109,6 +130,31 @@ img {
 
   hr.solid {
     border-top: 1px #DB2A20 solid
+  }
+
+  .para-text {
+    font-size: 15px;
+    margin: 0 80px;
+  }
+
+  .partner-title {
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .row-card-last {
+    display: inline-block;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .row-card-img {
+    margin-top: 100px;
+  }
+  
+  .partner-cropper {
+    width: 600px;
   }
 
   @media only screen and (max-width: 768px) {

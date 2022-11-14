@@ -24,10 +24,12 @@ const Foot = (props) => {
                 17537 Hwy 10 (56 Ave) Surrey, BC, Canada V3S 1C4<br />
                 <br />
                 Office:<br />
-                +1 (604) 503 - 5445<br />
-                Phone:<br />
-                +1 (604) 614 - 5188<br />
+                +1 (604) 782 - 4041<br />
                 <br />
+                Manjot Samra:
+                +1 (604) 503 - 5445<br />
+                Pavit Deep Singh:
+                +1 (604) 614 - 5188<br />
                 <br />
                 Email us at: info@terasolutions.ca <br />
                 <ul class="footer__nav">
