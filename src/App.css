@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+.toggleButton {
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .toggleButton {
+    visibility: visible;
+    height: 45px;
+    width: 45px;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: none;
+    background-image: url('../src/Components/resources/hamburger.png');
+    background-size: cover;
+  }
+}

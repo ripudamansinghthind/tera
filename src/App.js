@@ -20,6 +20,7 @@ import Services from "./Components/Layout/Services";
 import NotFound from "./Components/Layout/NotFound";
 
 import '../src/Components/css/Navbar.css';
+import '../src/App.css'
 
 import Logo from "../src/Components/resources/Logo.svg";
 
@@ -29,12 +30,36 @@ import Logo from "../src/Components/resources/Logo.svg";
 function App() {
   // const location = useLocation();
   const [showModal, setShowModal] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+  const toggleNav = () => {
+    setToggleMenu(!toggleMenu)
+  }
+
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    }
+    window.addEventListener('resize', changeWidth)
+    return () => {
+      window.removeEventListener('resize', changeWidth)
+    }
+  }, [])
+
+  // document.body.addEventListener("click", () => {
+  //   if (showModal) {
+  //     setShowModal(false);
+  //   }
+  // });
+
 
   return (
     <div className="App">
       <Modal showModal={showModal} setShowModal={setShowModal} />
       <AnimatePresence exitBeforeEnter onExitComplete={() => setShowModal(false)}>
-        <motion.nav className="navbar" id="navbar"
+      {(toggleMenu || screenWidth > 768) && (
+      <motion.nav className="navbar" id="navbar"
           initial={{x: -250}}
           animate={{x: 0}}>
             <div className="nav-content">
@@ -98,6 +123,14 @@ function App() {
               </ul>
             </div>
         </motion.nav>
+      )}
+      <motion.button 
+          className='toggleButton'
+          initial={{x: -250}}
+          animate={{x: 0}}
+          onClick={ toggleNav }
+          >
+      </motion.button>
         <Routes>
           <Route path="/" element={<Main />}/>
           <Route path="/Projects" element={<Projects />} />
