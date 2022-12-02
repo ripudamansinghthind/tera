@@ -6,8 +6,9 @@
     color: #2f2f2f;
     background-color: #fff;
     border-top: 1px solid #e5e5e5;
-    width: 75%;
+    width: 80%;
     margin-left: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
   .footer > * {
@@ -36,7 +37,7 @@
   }
 
   .footer__logo_cityview {
-    height: 200px;
+    height: 150px;
     width: 400px;
     margin: 0 auto;
   }
@@ -78,6 +79,8 @@
   .footer_link {
     display: inline-block;
     width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    margin-top: 20px;
   }
   
   .footer__nav > * {
@@ -88,10 +91,16 @@
   .nav__ul a {
     color: #999;
   }
+
+  .nav__ul p {
+    color: #999;
+    margin: 0;
+    padding: 0;
+  }
   
   .nav__ul--extra {
     column-count: 2;
-    column-gap: 1.25em;
+    column-gap: normal;
   }
   
   .legal {

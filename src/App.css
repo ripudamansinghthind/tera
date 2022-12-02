@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: url('./Components/resources/backlogo.png');
 }
 
 .App-logo {
@@ -37,20 +38,22 @@
   }
 }
 .toggleButton {
-  position: absolute;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 768px) {
   .toggleButton {
     visibility: visible;
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
     z-index: 9999;
     position: fixed;
     top: 0;
     left: 0;
     background-color: none;
     background-image: url('../src/Components/resources/hamburger.png');
+    background-blend-mode: hard-light;
     background-size: cover;
   }
 }

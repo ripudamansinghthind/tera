@@ -75,27 +75,15 @@ const Foot = (props) => {
                 
                 <ul class="nav__ul nav__ul--extra">
                     <li>
-                    <a href="#">Surrey</a>
+                    <p>Surrey</p>
+                    <p>Metro Vancouver</p>
+                    <p>Burnaby</p>
                     </li>
                     
                     <li>
-                    <a href="#">Metro Vancouver</a>
-                    </li>
-                    
-                    <li>
-                    <a href="#">Burnaby</a>
-                    </li>
-                    
-                    <li>
-                    <a href="#">Abbotsford</a>
-                    </li>
-                    
-                    <li>
-                    <a href="#">Richmond</a>
-                    </li>
-                    
-                    <li>
-                    <a href="#">West Vancouver</a>
+                    <p>Abbotsford</p>
+                    <p>Richmond</p>
+                    <p>West Vancouver</p>
                     </li>
                 </ul>
                 </li>

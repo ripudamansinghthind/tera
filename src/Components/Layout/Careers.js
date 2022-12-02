@@ -4,13 +4,13 @@ import '../css/Careers.css';
 const Careers = () => {
   return (
     <div className='card'>
-      <div className='title-row-card'>
-        <h2>Interested in working here?</h2>
-      </div>
-      <h3 className='sub-title'>Come create a better future with us!</h3>
+      <div className='row-card-careers'>
+        <h2 className='row-card-main-title'>Interested in working here?</h2>
+        <h3 className='sub-title'>Come grow yourself with us!</h3>
         <p>Our application process at Tera is simple and straightforward. If you spot a position you're interested in, just complete our short application.</p>
-        <p>A member of our team will look through your application and CV and reach out to you to schedule a meeting. This is not only your first moment to put your best foot forward, but also a moment to ask questions about your role, future opportunities, and judge if its the right fit.</p>
-        <div className='row-card'>
+        <p>A member of our team will look through your application and CV and reach out to you to schedule a meeting. This is not only your first moment to put your best foot forward, but also a moment to ask questions about your role, future opportunities, and judge if its the right fit.</p>  
+      </div>
+      <div className='row-card'>
           <form className='quote-form'>
             <div class="row">
               <div class="col-25">

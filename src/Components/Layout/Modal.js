@@ -29,6 +29,7 @@ const Modal = ({ showModal }) => {
                 <motion.div
                     className="modal"
                     variants={modal}>
+                        <button className='closeButton'></button>
                             <p>Tera Asbestos</p>
                             <p>Request a quote</p>
                             <form className='quote-form'>
