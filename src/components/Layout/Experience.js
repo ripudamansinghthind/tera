@@ -10,7 +10,7 @@ const Experience = () => {
       </div>
       <div className="row">
         <div className="experience-column-1">
-          <h3>Web Developer</h3>
+          <h3 className='experience-column-1_text'>Web Developer</h3>
           <a href="https://www.thindcreatives.ca/" className="company-website-experience" target="_blank" rel="noopener noreferrer">Thind Creatives Ltd.</a>
           <p>Jan 2022 - Currently Employed</p>
         </div>
@@ -22,7 +22,7 @@ const Experience = () => {
       </div>
       <div className="row">
         <div className="experience-column-1">
-          <h3>React Developer</h3>
+          <h3 className='experience-column-1_text'>React Developer</h3>
           <a href="https://www.getwoobie.com/" className="company-website-experience" target="_blank" rel="noopener noreferrer">GetWoobie Ltd. (Remote Lehi, Utah)</a>
           <p>Aug 2021 - Dec 2021</p>
         </div>
@@ -32,7 +32,7 @@ const Experience = () => {
       </div>
       <div className="row">
         <div className="experience-column-1">
-          <h3>Software Developer Co-op </h3>
+          <h3 className='experience-column-1_text'>Software Developer Co-op </h3>
           <a href="https://www.teck.com/" className="company-website-experience" target="_blank" rel="noopener noreferrer">Teck Coal Resources Ltd. (Calgary, AB)</a>
           <p>Sept 2020 - April 2021</p>
         </div>
@@ -44,7 +44,7 @@ const Experience = () => {
       </div>
       <div className="row">
         <div className="experience-column-1">
-          <h3>Junior Full Stack Developer </h3>
+          <h3 className='experience-column-1_text'>Junior Full Stack Developer </h3>
           <a href="https://swartz.dev/" className="company-website-experience" target="_blank" rel="noopener noreferrer">Swartz Software Development (Kamloops, BC)</a>
           <p>Jan 2020 - April 2020</p>
         </div>
@@ -56,7 +56,7 @@ const Experience = () => {
       </div>
       <div className="row">
         <div className="experience-column-1">
-      <h3>Software Developer Co-op</h3>
+      <h3 className='experience-column-1_text'>Software Developer Co-op</h3>
       <a href="https://www.usnr.com/en/page/home" className="company-website-experience" target="_blank" rel="noopener noreferrer">USNR (Salmon Arm, BC)</a>
         <p>May 2019 - Dec 2019</p>
           </div>
@@ -68,7 +68,7 @@ const Experience = () => {
           </div>
           <div className="row">
         <div className="experience-column-1">
-        <h3>Research Assistant </h3>
+        <h3 className='experience-column-1_text'>Research Assistant </h3>
         <a href="https://tru.ca/" className="company-website-experience" target="_blank" rel="noopener noreferrer">TRU (Kamloops, BC)</a>
         <p>Jan 2019 - April 2019</p>
           </div>
@@ -80,7 +80,7 @@ const Experience = () => {
 
           <div className="row">
             <div className="experience-column-1">
-              <h3>Teaching Assistant</h3>
+              <h3 className='experience-column-1_text'>Teaching Assistant</h3>
               <a href="https://tru.ca/" className="company-website-experience" target="_blank" rel="noopener noreferrer">TRU (Kamloops, BC)</a>
               <p>Sept 2018 - Dec 2018</p>
             </div>
@@ -92,7 +92,7 @@ const Experience = () => {
 
           <div className="row">
             <div className="experience-column-1">
-              <h3>Cashier</h3>
+              <h3 className='experience-column-1_text'>Cashier</h3>
               <a href="https://www.walmart.ca/en" className="company-website-experience" target="_blank" rel="noopener noreferrer">Walmart (Kamloops, BC)</a>
               <p>April 2018 - Jan 2019</p>
             </div>

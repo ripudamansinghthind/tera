@@ -60,7 +60,8 @@
   }
 @media only screen and (max-width: 768px) {
   .projects-row {
-    display: inline;
+    display: block;
+    width: 100%;
 }
 
 .projects-column {
@@ -71,14 +72,15 @@
     border: 1px rgba(0, 0, 0, 0.2) solid;
 }
 
-.projects-column-1 {
-  padding: 10px;
+.projects-column1 {
   text-align: center;
-  padding-bottom: 20px;
-  border-bottom: 1px #DB2A20 solid;
+  width: 100%;
+  margin: 10px auto;
 }
 
 .projects-column2 {
   padding-top: 10px;
+  width: 100%;
+  margin: 0 auto;
 }
 }

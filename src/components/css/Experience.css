@@ -48,16 +48,21 @@
   }
   
   @media only screen and (max-width: 768px) {
+    .card {
+      min-width: 350px;
+      max-width: 350px;
+      font-size: 5px;
+      display: block;
+    }
     .Experience-header {
       padding: 10px 0;
-      border-bottom: 1px #DB2A20 solid;
     }
     .row {
-      display: flex;
-      margin: 0 auto;
+      display: block;
+      background-color: transparent;
+      height: 100%;
       padding: 0;
-      padding-top: 20px;
-      text-align: center;
+      margin: 20px 0 20px 0;
     }
     .title {
       font-size: 18px;
@@ -67,22 +72,28 @@
       text-decoration: none;
       font-size: 22px;
       color: white;
+      margin: 0;
     }
     
     p {
-        font-size: 13px;
+        font-size: 20px;
+        margin: 0;
     }
     .experience-column-1 {
-      float: left;
       width: 100%;
+    }
+
+    .experience-column-1_text {
       padding: 0;
-      text-align: center;
+      margin: 0;
     }
     .experience-column-2 {
-      float: left;
       width: 100%;
-      Text-align: left;
-      border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
-      border-left: none;
+      height: 100%;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 50px 0 50px 0;
+      border-radius: 5px;
+      margin-bottom: 50px;
     }
   }

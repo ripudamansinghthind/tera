@@ -45,40 +45,52 @@
 
   @media only screen and (max-width: 768px) {
     .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      border: 1px rgba(0, 0, 0, 0.2) solid;
       min-width: 350px;
       max-width: 350px;
       text-align: center;
       font-size: 5px;
       margin: 0 auto;
       padding-bottom: 0;
+      display: block;
     }
     .image-cropper {
       position: relative;
       overflow: hidden;
       border-radius: 50%;
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       padding-top: 0;
       margin: 0 auto;
   }
-  .row-card {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
+
+  .CEO__title {
+    font-size: 30px;
   }
-  .column-1-card {
-    position: relative;
-    width: 100%;
-    border-right: none;
+
+  .img__cropper_text {
+    margin: 0;
     padding: 0;
-    border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
   }
-  .column-2-card {
-    position: relative;
-    margin: auto;
-    width: 100%
+
+  .profile__row {
+    width: 100%;
+    display: block;
+  }
+
+  .profile__column1{
+    width: 100%;
+  }
+
+  .profile__column2{
+    width: 100%;
+    font-size: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+  }
+
+  .profile__column2_text {
+    font-size: 15px;
+    padding: 0 20px 0 20px;
   }
 
   }

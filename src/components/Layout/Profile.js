@@ -18,7 +18,7 @@ function Profile() {
           <div className="image-cropper">
             <img src={ Img } alt = "My portfolio pic"/>
           </div>
-          <h1>Felix Thind</h1>
+          <h1 className='CEO__title'>Felix Thind</h1>
           <div className='img__cropper_text'>
             <p>Software Developer</p>
             <p>Business | Tech</p>
@@ -30,9 +30,9 @@ function Profile() {
           <br />
           <h2>I'm a consistent and persistent software developer currently working on a few web development projects</h2>
           <br />
-          <p>Feel free to browse through my experience, projects or resume</p>
+          <p className='profile__column2_text'>Feel free to browse through my experience, projects or resume</p>
           <br />
-          <p>Think we should connect? I think so too! Message me on any of my socials linked below</p>
+          <p className='profile__column2_text'>Think we should connect? I think so too! Message me on any of my socials linked below</p>
           <h3>Everything, Everyone, Everywhere!</h3>
         </div>
       </div>

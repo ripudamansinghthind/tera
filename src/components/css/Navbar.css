@@ -124,10 +124,10 @@
         width: 100%;
         font-size: 8px !important;
         justify-content: center;
+        background-color: rgba(255, 255, 255, 0.4);
       }
       
-      .nav-content {  /* Allow the centering to work */
-        display: flex;
+      .nav-content {
         padding: 0;
       }
       
@@ -135,31 +135,75 @@
         margin: 0 auto;
         padding-left: 0;
         justify-content: center;
+        background-color: rgba(0, 0, 0, 0.2);
       }
     
       .nav-item {
-        padding: 0 auto;
-        display: table-cell;
+        display: block;
+        font-size: 15px;
+        padding: 20px;
+        text-decoration: underline white;
+      }
+      .resumeButton {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        padding: 5px;
       }
       
-      .clickyButton {
-        border-left: 1px rgba(158, 95, 95, 0.5) solid;
-        font-size: 16px;
+      .resumeButton a{
+        display: block;
+        font-size: 18px;
         color: white;
-        margin-left: 5px;
+        text-decoration: none;
+        padding: 10px;
+      }
+  
+      .nav__footer {
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+  
+      .social-images {
+        margin-bottom: 10px;
       }
       
       .clickyButton:hover {
-        transition: 0.5s;
-        border-bottom: 1px #DB2A20 solid;
-      }
-      
-      .nav-item:hover {
-        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-        transition: 0.3s;
+        color: white;
+        transition: color 0.5s;
       }
       
       .nav-item a:hover {
         text-decoration: none;
+        color: black;
       }
+      
+      .resumeButton:hover {
+        color: white;
+        transition: color 0.5s;
+      }
+
+      .image-socials {
+        margin-top: 10px;
+        height: 30px;
+        transition: transform 0.2s ease;
+    }
+  
+    .image-socials_github {
+      margin-top: 10px;
+      height: 30px;
+      transition: transform 0.2s ease;
+      filter: invert(100%);
+  }
+    
+    .social-images a {
+        margin: 0 15px;
+    }
+    .footer-a {
+      display: inline-block;
+      font-size: 9px;
+      padding: 0 !important;
+      margin: 0 !important;
+      text-decoration: underline;
+      transition: transform 0.2s ease;
+  }
     }

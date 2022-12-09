@@ -63,19 +63,19 @@ function App() {
           animate={{x: 0}}>
           <div className="nav-content">
             <Link to="/">
-            <img src={Logo} className="logo-img" alt='Logo' />
+            <img onClick={ toggleNav } src={Logo} className="logo-img" alt='Logo' />
             </Link>
             <div className="nav-text-diff">
               <ul className="nav-items">
                   <li className="nav-item">
                   <Link to="/Experience">
-                    <div className="clickyButton">Experience
+                    <div onClick={ toggleNav } className="clickyButton">Experience
                     </div>
                   </Link>
                   </li>
                   <li className="nav-item">
                   <Link to="/Projects">
-                    <div className="clickyButton">Projects
+                    <div onClick={ toggleNav } className="clickyButton">Projects
                     </div>
                   </Link>
                   </li>
@@ -104,6 +104,13 @@ function App() {
             </div>
         </motion.nav>
       )}
+        <motion.button 
+              className='toggleButton'
+              initial={{x: -450}}
+              animate={{x: 0}}
+              onClick={ toggleNav }
+              >
+          </motion.button>
             <Routes>
                 <Route path="/" element={<Profile />}/>
                 <Route path="/Experience" element={<Experience />} />
