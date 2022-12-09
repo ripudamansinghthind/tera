@@ -11,13 +11,13 @@ const Experience = () => {
       <div className="row">
         <div className="experience-column-1">
           <h3>Web Developer</h3>
-          <a href="https://www.cityviewgroup.ca/" className="company-website-experience" target="_blank" rel="noopener noreferrer">Cityview Group of Companies Ltd.</a>
-          <p>Feb 2022 - Currently Employed</p>
+          <a href="https://www.thindcreatives.ca/" className="company-website-experience" target="_blank" rel="noopener noreferrer">Thind Creatives Ltd.</a>
+          <p>Jan 2022 - Currently Employed</p>
         </div>
         <div className="experience-column-2">
         <p>• Designed and developer 20+ front-end and back-end applications utilizing React.js, Node.js and TypeScript</p>
         <p>• Played a key role working with stakeholders to design complex solutions, led from inception to prodcution</p>
-        <p>• Increased site traffic from 35% to 80% by redesigning existing websites to improve user experience and incorporating SEO techniques</p>
+        <p>• Worked on multiple original development projects including e-commerce websites, web applications and desktop software, encompassing design, coding, testing and maintenance whilst managing 95% client satisfaction</p>
         </div>
       </div>
       <div className="row">

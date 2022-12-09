@@ -33,7 +33,7 @@ function Profile() {
           <p>Feel free to browse through my experience, projects or resume</p>
           <br />
           <p>Think we should connect? I think so too! Message me on any of my socials linked below</p>
-          <h3>Everywhere, Everyone, Everything!</h3>
+          <h3>Everything, Everyone, Everywhere!</h3>
         </div>
       </div>
       </div>

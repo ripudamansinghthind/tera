@@ -29,7 +29,7 @@ import Logo from './components/Icons/LogoWhite.png';
 import LinkedInImage from '../src/components/Icons/linked.png';
 import GitHubImage from '../src/components/Icons/github.png';
 import EmailImage from '../src/components/Icons/email.png';
-import Resume from '../src/components/Icons/Resume - Web Developer.pdf';
+import Resume from '../src/components/Icons/Felix Thind - No personal.pdf';
 
 function App() {
     const particlesInit = useCallback(async (engine: Engine) => {
