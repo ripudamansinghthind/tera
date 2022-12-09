@@ -1,0 +1,84 @@
+.projects-header {
+    color: white;
+    font-size: 30px;
+  }
+  
+  .projects-row {
+      display: flex;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.1);
+      font-size: 30px;
+  }
+
+  .projects-column1 {
+      margin-top: 50px;
+      width: 50%;
+      float: left;
+      border-radius: 5px;
+  }
+
+  .projects-column2 {
+    width: 50%;
+    float: right;
+    margin: 70px 50px 0 0;
+  }
+
+  .tech-skills {
+      display: inline-flex;
+      white-space: nowrap;
+  }
+
+  .tech-skills-text {
+      border: 1px rgba(255, 255, 255, 0.2) solid;
+      padding: 0 20px;
+  }
+
+  .projects__row_logos {
+    display: inline-flex;
+  }
+
+  .projects-link-image {
+      width: 35px;
+      transform: scale(0.7);
+      filter: invert(100%);
+      margin: 0 30px;
+  }
+
+  .projects__row_logos_a {
+    vertical-align: auto;
+    margin: auto;
+  }
+
+  .projects-link-image_text {
+    margin: 0;
+    font-size: 11px;
+  }
+
+  .projects-link-image:hover {
+    transform: scale(1);
+    transition: 0.5s;
+  }
+@media only screen and (max-width: 768px) {
+  .projects-row {
+    display: inline;
+}
+
+.projects-column {
+    width: 100%;
+    padding: 0 40px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+}
+
+.projects-column-1 {
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px #DB2A20 solid;
+}
+
+.projects-column2 {
+  padding-top: 10px;
+}
+}
