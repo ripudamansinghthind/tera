@@ -28,7 +28,7 @@ function Profile() {
         <div className='profile__column2'>
           <br />
           <br />
-          <h2>I'm a consistent and persistant software developer currently working on a few web development projects</h2>
+          <h2>I'm a consistent and persistent software developer currently working on a few web development projects</h2>
           <br />
           <p>Feel free to browse through my experience, projects or resume</p>
           <br />
