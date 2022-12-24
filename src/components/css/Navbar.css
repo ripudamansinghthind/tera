@@ -63,9 +63,14 @@
       margin-bottom: 10px;
     }
     
+    .logo-img:hover {
+      opacity: 0.4;
+      transition: opacity 0.5s;
+      }
+    
     .clickyButton:hover {
-      color: white;
-      transition: color 0.5s;
+      opacity: 0.4;
+      transition: opacity 0.5s;
     }
     
     .nav-item a:hover {
@@ -109,6 +114,12 @@
       opacity: 0.4;
       transition: opacity 0.5s;
   }
+
+  .image-socials_github:hover {
+    opacity: 0.4;
+    transition: opacity 0.5s;
+}
+
   .footer-a {
     display: inline-block;
     font-size: 9px;

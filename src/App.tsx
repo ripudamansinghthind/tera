@@ -2,7 +2,8 @@ import React, { useCallback, useEffect, useState } from "react";
 import {
     Routes,
     Route,
-    Link
+    Link,
+    useLocation,
   } from "react-router-dom";
   import { motion, AnimatePresence } from 'framer-motion';
 
@@ -32,16 +33,16 @@ import EmailImage from '../src/components/Icons/email.png';
 import Resume from '../src/components/Icons/Felix Thind - No personal.pdf';
 
 function App() {
+  //particles
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine);
     }, []);
-
     const [toggleMenu, setToggleMenu] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-
-  const toggleNav = () => {
-    setToggleMenu(!toggleMenu)
-  }
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+    const location = useLocation();
+    const toggleNav = () => {
+      setToggleMenu(!toggleMenu)
+    }
 
   useEffect(() => {
     const changeWidth = () => {
@@ -53,14 +54,18 @@ function App() {
     }
   }, [])
 
-
     return (
         <div className="App">
             <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
       {(toggleMenu || screenWidth > 768) && (
       <motion.nav className="navbar" id="navbar"
           initial={{x: -250}}
-          animate={{x: 0}}>
+          animate={{x: 0}}
+          transition={{
+            delay: 0.2,
+            x: { duration: 1 },
+            default: { ease: "linear" }
+          }}>
           <div className="nav-content">
             <Link to="/">
             <img onClick={ toggleNav } src={Logo} className="logo-img" alt='Logo' />
@@ -111,12 +116,14 @@ function App() {
               onClick={ toggleNav }
               >
           </motion.button>
-            <Routes>
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Profile />}/>
                 <Route path="/Experience" element={<Experience />} />
                 <Route path="/Projects" element={<Projects />}/>
                 <Route path="*" element={<NotFound />} />
             </Routes>
+          </AnimatePresence>
         </div>
     );
 }

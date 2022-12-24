@@ -1,10 +1,20 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import '../css/Experience.css';
 
 const Experience = () => {
   return (
-    <div className="card" id="Profile">
+    <motion.div className="card" id="Profile"
+    initial={{x: "100%"}}
+    animate={{x: 0}}
+    transition={{
+      delay: 0.1,
+      x: { duration: 1 },
+      default: { ease: "linear" }
+    }}
+    exit={{ x: "100%", opacity: 0 }}
+    >
       <div className="Experience-header">
           <h1 id = "Experience">Experience</h1>
       </div>
@@ -100,7 +110,7 @@ const Experience = () => {
               <p>• Gained people skills by processing people’s transactions and providing good customer service</p>
               </div>
           </div>
-        </div>
+        </motion.div>
   )
 }
 

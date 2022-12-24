@@ -1,15 +1,25 @@
 import React from 'react';
 import '../css/Profile.css'
-import Img from '../Icons/FelixThindBGRemFilm.png';
+import { motion } from 'framer-motion';
 
 // Icons import
+import Img from '../Icons/FelixThindBGRemFilm.png';
 import LocationIcon from '../Icons/location.svg';
 
 
 function Profile() {
   return (
     <>
-    <div className="card" id="Profile">
+    <motion.div className="card" id="Profile"
+    initial={{x: "100%"}}
+    animate={{x: 0}}
+    transition={{
+      delay: 0.1,
+      x: { duration: 1 },
+      default: { ease: "linear" }
+    }}
+    exit={{ x: "100%", opacity: 0 }}
+    >
       <div className="profile-header">
         <h1>Welcome!</h1>
       </div>
@@ -36,7 +46,7 @@ function Profile() {
           <h3>Everything, Everyone, Everywhere!</h3>
         </div>
       </div>
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -18,7 +18,6 @@ const Foot = (props) => {
           <img src={ LinkedInImage } className="image-socials" alt = "LinkedIn social link"/></a>
         <a href="https://github.com/ripudamansinghthind" target="_blank" rel="noopener noreferrer">
           <img src={ GitHubImage } className="image-socials" alt = "GitHub social link"/></a>
-        <p className = "footer-para-text">This website is maintained on my <a href="https://github.com/ripudamansinghthind/portfolio-website" className="footer-a" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
     </div>
     );
