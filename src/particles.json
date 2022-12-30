@@ -47,7 +47,7 @@
       "enable": true,
       "outMode": "bounce",
       "random": false,
-      "speed": 2,
+      "speed": 1,
       "straight": false
     },
     "number": {
@@ -55,7 +55,8 @@
         "enable": true,
         "value_area": 2000
       },
-      "value": 40
+      "value": 40,
+      "limit": 50
     },
     "opacity": {
       "value": 0.6
@@ -66,7 +67,6 @@
     "size": {
       "random": true,
       "value": 7
-
     }
   },
   "detectRetina": true

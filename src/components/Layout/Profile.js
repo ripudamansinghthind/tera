@@ -1,11 +1,11 @@
 import React from 'react';
 import '../css/Profile.css'
 import { motion } from 'framer-motion';
+import Typewriter from 'typewriter-effect';
 
 // Icons import
 import Img from '../Icons/FelixThindBGRemFilm.png';
 import LocationIcon from '../Icons/location.svg';
-
 
 function Profile() {
   return (
@@ -21,7 +21,16 @@ function Profile() {
     exit={{ x: "100%", opacity: 0 }}
     >
       <div className="profile-header">
-        <h1>Welcome!</h1>
+      <h1>
+        <Typewriter
+          options={{
+            strings: ['Everything!', 'Everyone!', 'Everywhere!',],
+            autoStart: true,
+            loop: true,
+            }}
+          />
+      </h1>
+      
       </div>
       <div className="profile__row">
         <div className='profile__column1'>
@@ -43,7 +52,6 @@ function Profile() {
           <p className='profile__column2_text'>Feel free to browse through my experience, projects or resume</p>
           <br />
           <p className='profile__column2_text'>Think we should connect? I think so too! Message me on any of my socials linked below</p>
-          <h3>Everything, Everyone, Everywhere!</h3>
         </div>
       </div>
       </motion.div>

@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Typewriter from 'typewriter-effect';
+
 import Resume from '../Icons/Resume.pdf'
 import Logo from '../Icons/Logo.png';
+
 import '../css/Navbar.css'
 
 const Navbar = (props) => {

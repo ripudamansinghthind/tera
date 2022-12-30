@@ -2,7 +2,6 @@
     text-align: center;
     padding-bottom: 30px;
     color: white;
-    border-radius: 5px;
     margin-top: 50px;
     height: 100%;
   }
@@ -14,8 +13,9 @@
 
 .profile__row {
   display: flex;
-  margin: 0 auto;
   color: white;
+  margin-right: 100px;
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 

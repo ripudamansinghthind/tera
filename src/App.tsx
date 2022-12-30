@@ -6,7 +6,7 @@ import {
     NavLink,
     useLocation,
   } from "react-router-dom";
-  import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 //particles
 import Particles from "react-particles";
@@ -23,6 +23,8 @@ import Footer from './components/Layout/Footer.js'
 import NotFound from './components/Layout/NotFound.js'
 import Experience from './components/Layout/Experience.js'
 import Projects from './components/Layout/Projects.js'
+import Blog from "./components/Layout/Blog";
+import Studio from "./components/Layout/Studio.js";
 
 import '../src/components/css/Navbar.css'
 
@@ -73,27 +75,49 @@ function App() {
                     <div className="nav-text-diff">
                       <ul className="nav-items">
                           <li className="nav-item">
-                          <NavLink
-                            to="/Experience"
-                            onClick={ toggleNav }
-                            style={({ isActive }) => ({
-                              color: isActive ? '#fff' : 'rgba(255, 255, 255, 0.5)',
-                            })}
-                          >
-                            Experience
-                          </NavLink>
+                            <NavLink
+                              to="/Experience"
+                              onClick={ toggleNav }
+                              style={({ isActive }) => ({
+                                color: isActive ? '#fff' : 'rgba(255, 255, 255, 0.5)',
+                              })}
+                            >
+                              Experience
+                            </NavLink>
                           </li>
                           <li className="nav-item">
+                            <NavLink
+                              to="/Projects"
+                              onClick={ toggleNav }
+                              style={({ isActive }) => ({
+                                color: isActive ? '#fff' : 'rgba(255, 255, 255, 0.5)',
+                              })}
+                            >
+                              Projects
+                            </NavLink>
+                          </li>
+                          {/* <li className="nav-item">
                           <NavLink
-                            to="/Projects"
+                            to="/Studio"
                             onClick={ toggleNav }
                             style={({ isActive }) => ({
                               color: isActive ? '#fff' : 'rgba(255, 255, 255, 0.5)',
                             })}
                           >
-                            Projects
+                            Studio
                           </NavLink>
-                          </li>
+                          </li> */}
+                          {/* <li className="nav-item">
+                            <NavLink
+                              to="/Blog"
+                              onClick={ toggleNav }
+                              style={({ isActive }) => ({
+                                color: isActive ? '#fff' : 'rgba(255, 255, 255, 0.5)',
+                              })}
+                            >
+                              Blog
+                            </NavLink>
+                          </li> */}
                         </ul>
                       </div>
                       <div className="nav__footer">
@@ -131,6 +155,8 @@ function App() {
                 <Route path="/" element={<Profile />}/>
                 <Route path="/Experience" element={<Experience />} />
                 <Route path="/Projects" element={<Projects />}/>
+                <Route path="/Blog" element={<Blog />}/>
+                <Route path="/Studio" element={<Studio />}/>
                 <Route path="*" element={<NotFound />} />
             </Routes>
           </AnimatePresence>
