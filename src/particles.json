@@ -59,14 +59,30 @@
       "limit": 50
     },
     "opacity": {
-      "value": 0.6
+      "value": 0.9,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "opacity_min": 0.5,
+        "sync": true
+      }
     },
     "shape": {
-      "type": "square"
+      "type": "star",
+      "polygon": {
+        "nb_sides": 5
+      }
     },
     "size": {
-      "random": true,
-      "value": 7
+      "random": false,
+      "value": 5,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0.5,
+        "sync": false
+      }
     }
   },
   "detectRetina": true
