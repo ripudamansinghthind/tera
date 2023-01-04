@@ -60,77 +60,106 @@ function App() {
         <div className="App">
             <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
               {(toggleMenu || screenWidth > 768) && (
-              <motion.nav className="navbar" id="navbar"
-                  initial={{x: -250}}
-                  animate={{x: 0}}
-                  transition={{
-                    delay: 0.2,
-                    x: { duration: 1 },
-                    default: { ease: "linear" }
-                  }}>
+              <motion.nav className="navbar" id="navbar">
                   <div className="nav-content">
                     <Link to="/">
-                    <img onClick={ toggleNav } src={Logo} className="logo-img" alt='Logo' />
+                    <motion.img
+                      onClick={ toggleNav }
+                      src={Logo}
+                      className="logo-img"
+                      alt='Logo'
+                      initial={{x: -1000}}
+                      animate={{x: 0}}
+                      transition={{
+                        delay: 1,
+                        x: { duration: 1 },
+                        default: { ease: "linear" }
+                      }} />
                     </Link>
                     <div className="nav-text-diff">
                       <ul className="nav-items">
-                          <li className="nav-item">
+                          <motion.li className="nav-item"
+                            initial={{x: -1000}}
+                            animate={{x: 0}}
+                            transition={{
+                              delay: 1.5,
+                              x: { duration: 1 },
+                              default: { ease: "linear" }
+                            }}>
                             <NavLink
                               to="/Experience"
                               onClick={ toggleNav }
                               style={({ isActive }) => ({
-                                color: isActive ? '#fff' : 'rgba(255, 255, 255, 0.5)',
+                                color: isActive ? '#000000' : 'rgba(0, 0, 0, 0.5)',
                               })}
                             >
                               Experience
                             </NavLink>
-                          </li>
-                          <li className="nav-item">
+                          </motion.li>
+                          <motion.li className="nav-item"
+                            initial={{x: -1000}}
+                            animate={{x: 0}}
+                            transition={{
+                              delay: 2,
+                              x: { duration: 1 },
+                              default: { ease: "linear" }
+                            }}>
                             <NavLink
                               to="/Projects"
                               onClick={ toggleNav }
                               style={({ isActive }) => ({
-                                color: isActive ? '#fff' : 'rgba(255, 255, 255, 0.5)',
+                                color: isActive ? '#000000' : 'rgba(0, 0, 0, 0.5)',
                               })}
                             >
                               Projects
                             </NavLink>
-                          </li>
-                          {/* <li className="nav-item">
-                          <NavLink
-                            to="/Studio"
-                            onClick={ toggleNav }
-                            style={({ isActive }) => ({
-                              color: isActive ? '#fff' : 'rgba(255, 255, 255, 0.5)',
-                            })}
-                          >
-                            Studio
-                          </NavLink>
-                          </li> */}
-                          {/* <li className="nav-item">
-                            <NavLink
-                              to="/Blog"
-                              onClick={ toggleNav }
-                              style={({ isActive }) => ({
-                                color: isActive ? '#fff' : 'rgba(255, 255, 255, 0.5)',
-                              })}
-                            >
-                              Blog
-                            </NavLink>
-                          </li> */}
+                          </motion.li>
                         </ul>
                       </div>
-                      <div className="nav__footer">
-
+                      <motion.div className="nav__footer"
+                        initial={{y: 250}}
+                        animate={{y: 0}}
+                        transition={{
+                          delay: 3,
+                          duration: 2,
+                          type: 'spring',
+                          bounce: 0.6,
+                        }}>
                         <div className="nav__footer__row2">
-                          <div className="social-images">
+                          <motion.div className="social-images"
+                            initial={{ y: 200 }}
+                            animate={{ y: 0 }}
+                            transition={{
+                              delay: 4,
+                              duration: 2,
+                              type: 'spring',
+                              bounce: 0.6,
+                            }}>
                             <a href="mailto:ripudamansinghthind@gmail.com" target="_blank" rel="noopener noreferrer">
-                              <img src={ EmailImage } className="image-socials" alt = "Email social link"/></a>
+                              <motion.img src={ EmailImage } className="image-socials" alt = "Email social link"
+                                initial={{ rotate: 0 }}
+                                animate={{ rotate: 360 }}
+                                transition={{
+                                  delay: 3,
+                                  duration: 1.7,
+                                }}/></a>
                             <a href="https://www.linkedin.com/in/ripudamanthind/" target="_blank" rel="noopener noreferrer">
-                              <img src={ LinkedInImage } className="image-socials" alt = "LinkedIn social link"/></a>
+                              <motion.img src={ LinkedInImage } className="image-socials" alt = "LinkedIn social link"
+                                initial={{ rotate: 0 }}
+                                animate={{ rotate: 360 }}
+                                transition={{
+                                  delay: 3,
+                                  duration: 1.7,
+                                }}/></a>
                             <a href="https://github.com/ripudamansinghthind" target="_blank" rel="noopener noreferrer">
-                              <img src={ GitHubImage } className="image-socials_github" alt = "GitHub social link"/></a>
-                          </div>
+                              <motion.img src={ GitHubImage } className="image-socials_github" alt = "GitHub social link"
+                                initial={{ rotate: 0 }}
+                                animate={{ rotate: 360 }}
+                                transition={{
+                                  delay: 3,
+                                  duration: 1.7,
+                                }}/></a>
+                          </motion.div>
                         </div>
                         <div className="nav__footer__row">
                           <li className="resumeButton">
@@ -139,7 +168,7 @@ function App() {
                             </div></a>
                           </li>
                         </div>
-                      </div>
+                      </motion.div>
                     </div>
                 </motion.nav>
               )}

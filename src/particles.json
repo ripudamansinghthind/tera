@@ -30,7 +30,7 @@
   },
   "particles": {
     "color": {
-      "value": "#fff"
+      "value": "random"
     },
     "links": {
       "color": "random",

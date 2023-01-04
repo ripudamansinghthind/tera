@@ -1,22 +1,23 @@
 .card {
     text-align: center;
     padding-bottom: 30px;
-    color: white;
     margin-top: 50px;
     height: 100%;
   }
 
 .profile-header {
-  color: white;
   font-size: 30px;
   }
 
 .profile__row {
   display: flex;
-  color: white;
   margin-right: 100px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.profile__column2{
+  padding: 0 70px 0 0px;
 }
 
 .image-cropper {
@@ -25,18 +26,16 @@
   border-radius: 50%;
   width: 178px;
   height: 200px;
-  border: 1px solid white;
+  border: 1px solid black;
   margin: 50px;
 }
 
   .title {
-    color: white;
     font-size: 18px;
   }
   
   a {
     text-decoration: none;
-    color: white;
   }
 
   p {

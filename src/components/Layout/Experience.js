@@ -25,7 +25,7 @@ const Experience = () => {
           <p>Jan 2022 - Currently Employed</p>
         </div>
         <div className="experience-column-2">
-        <p>• Designed and developer 20+ front-end and back-end applications utilizing React.js, Node.js and TypeScript</p>
+        <p>• Designed and developed 20+ front-end and back-end applications utilizing React.js, Node.js and TypeScript</p>
         <p>• Played a key role working with stakeholders to design complex solutions, led from inception to production</p>
         <p>• Worked on multiple original development projects including e-commerce websites, web applications and desktop software, encompassing design, coding, testing and maintenance whilst managing 95% client satisfaction</p>
         </div>
