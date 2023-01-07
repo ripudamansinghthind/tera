@@ -175,6 +175,7 @@ const menuItems = [...new Set(Data.map((Val) => Val.category))];
                   {Val.img.map((item) => (
                   <div>
                     <img src={item.image} alt={item.alt}/>
+                    <p className='legend'>{item.alt}</p>
                   </div>
                   ))}
                 </Carousel>

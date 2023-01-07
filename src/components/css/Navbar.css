@@ -2,7 +2,6 @@
   .logo-img {
     width: 180px;
     margin-top: 30px;
-    margin-bottom: 0;
     filter: invert(100%);
     }
     .navbar {
@@ -107,11 +106,6 @@
       margin: 0 15px;
   }
   
-  .footer-para-text {
-      font-size: 11px;
-      color: black;
-  }
-  
   .image-socials:hover {
       opacity: 0.4;
       transition: opacity 0.5s;
@@ -130,93 +124,101 @@
     text-decoration: underline;
     transition: transform 0.2s ease;
 }
-    }
-    @media only screen and (max-width: 768px) {
-      .navbar {
-        margin-top: 0px;
-        width: 100%;
-        font-size: 8px !important;
-        justify-content: center;
-        background-color: rgba(255, 255, 255, 0.4);
-      }
-      
-      .nav-content {
-        padding: 0;
-      }
-      
-      .nav-items {
-        margin: 0 auto;
-        padding-left: 0;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.2);
-      }
-    
-      .nav-item {
-        display: block;
-        font-size: 15px;
-        padding: 20px;
-        text-decoration: underline white;
-      }
-      .resumeButton {
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 5px;
-        padding: 5px;
-      }
-      
-      .resumeButton a{
-        display: block;
-        font-size: 18px;
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-      }
-  
-      .nav__footer {
-        border-radius: 5px;
-        background-color: rgba(0, 0, 0, 0.2);
-      }
-  
-      .social-images {
-        margin-bottom: 10px;
-      }
-      
-      .clickyButton:hover {
-        color: white;
-        transition: color 0.5s;
-      }
-      
-      .nav-item a:hover {
-        text-decoration: none;
-        color: black;
-      }
-      
-      .resumeButton:hover {
-        color: white;
-        transition: color 0.5s;
-      }
 
-      .image-socials {
-        margin-top: 10px;
-        height: 30px;
-        transition: transform 0.2s ease;
-    }
+.nav__footer_text {
+  font-size: 15px;
+}
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    margin-top: 0px;
+    width: 100%;
+    font-size: 8px !important;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
   
-    .image-socials_github {
-      margin-top: 10px;
-      height: 30px;
-      transition: transform 0.2s ease;
-      filter: invert(100%);
+  .nav-content {
+    padding: 0;
   }
-    
-    .social-images a {
-        margin: 0 15px;
-    }
-    .footer-a {
-      display: inline-block;
-      font-size: 9px;
-      padding: 0 !important;
-      margin: 0 !important;
-      text-decoration: underline;
-      transition: transform 0.2s ease;
+  
+  .nav-items {
+    margin: 0 auto;
+    padding-left: 0;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
   }
-    }
+
+  .nav-item {
+    display: block;
+    font-size: 15px;
+    padding: 20px;
+    text-decoration: underline white;
+  }
+  .resumeButton {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .resumeButton a{
+    display: block;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .nav__footer {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .social-images {
+    margin-bottom: 10px;
+  }
+  
+  .clickyButton:hover {
+    color: white;
+    transition: color 0.5s;
+  }
+  
+  .nav-item a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .resumeButton:hover {
+    color: white;
+    transition: color 0.5s;
+  }
+
+  .image-socials {
+    margin-top: 10px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.image-socials_github {
+  margin-top: 10px;
+  height: 30px;
+  transition: transform 0.2s ease;
+  filter: invert(100%);
+}
+
+.social-images a {
+    margin: 0 15px;
+}
+.footer-a {
+  display: inline-block;
+  font-size: 9px;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-decoration: underline;
+  transition: transform 0.2s ease;
+}
+}

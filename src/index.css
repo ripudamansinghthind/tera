@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Xanh+Mono&display=swap');
 
 body {
   margin: 0;
@@ -10,12 +10,14 @@ body {
   background-size: cover;
   font-size: 30px;
 }
+
 * {
   cursor: crosshair;
 }
 
 code {
-  font-family: 'Lobster Two', cursive;
+  font-family: 'VT323', monospace;
+  font-family: 'Xanh Mono', monospace;
 }
 
 img {
