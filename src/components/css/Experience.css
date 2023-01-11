@@ -1,41 +1,37 @@
 .Experience-header {
-  color: black;
   font-size: 30px;
   }
   .row {
     display: flex;
     margin: 0 auto;
-    color: black;
-    font-size: 30px;
     margin-right: 100px;
-    border-radius: 5px;
     width: 100%;
     border-bottom: 1px solid #E5E5E5;
+    font-size: 15px;
   }
   .experience-column-1 {
-    margin-top: 50px;
     width: 40%;
     text-align: center;
+    margin: 70px 0;
   }
   .experience-column-2 {
     border-left: 1px solid #E5E5E5;
     width: 60%;
     text-align: left;
-    padding: 50px;
-  }
-  
-  .experience-card h1 {
-      padding-top: 30px;
+    padding: 70px 70px;
   }
   
   .company-website-experience {
-    font-size: 18px;
-    text-decoration: underline #DB2A20;
+    text-decoration: underline #1E1E1E;
+  }
+
+  .experience_date {
+    font-size: 11px;
   }
   
   .company-website-experience:hover {
-    font-size: 20px;
-    transition: font-size 0.7s ease-out;
+    background-color: #E5E5E5;
+    transition: background-color 1s;
   }
   
   @media only screen and (max-width: 768px) {

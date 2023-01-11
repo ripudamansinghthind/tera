@@ -19,8 +19,6 @@ import './App.css';
 import particlesOptions from "./particles.json";
 import { ISourceOptions } from "tsparticles-engine";
 
-//Typewriter
-import Typewriter from 'typewriter-effect';
 
 //import components
 import Profile from './components/Layout/Profile.js'
@@ -34,7 +32,7 @@ import Studio from "./components/Layout/Studio.js";
 import '../src/components/css/Navbar.css'
 
 
-import Logo from './components/Icons/LogoWhite.png';
+import Logo from './components/Icons/Logo.svg';
 import LinkedInImage from '../src/components/Icons/linkedin.svg';
 import GitHubImage from '../src/components/Icons/github.svg';
 import EmailImage from '../src/components/Icons/mail.svg';
@@ -51,6 +49,29 @@ function App() {
 
     //responsive screen
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    //router-title
+    const [pageTitle, setPageTitle] = useState('Home');
+
+    const titleMap = [
+      {path: '/', title: typewritertext()},
+      {path: '/Experience', title:'Experience'},
+      {path: '/Projects', title:'Projects'}
+    ]
+
+    function typewritertext() {
+      return 'Everything! Everyone! Everywhere!';
+    }
+
+    let curLoc = useLocation();
+
+    useEffect(() => {
+      const curTitle = titleMap.find(item => item.path === curLoc.pathname)
+      if(curTitle && curTitle.title){
+        setPageTitle(curTitle.title)
+        document.title = curTitle.title
+      }
+    }, [curLoc])
     
     //router-dom
     const location = useLocation();
@@ -151,19 +172,7 @@ return (
             exit={{ x: "100%", opacity: 0 }}
             >
           <h1>
-            <Typewriter
-              options={{
-                autoStart: true,
-                }}
-                onInit={(typewriter) => {
-                  typewriter.typeString('Everything! ')
-                    .pauseFor(1500)
-                  typewriter.typeString('Everyone! ')
-                    .pauseFor(1500)
-                  typewriter.typeString('Everywhere!')
-                    .start();
-                }}
-              />
+            <div className='typewriter'><h5>{pageTitle}</h5></div>
           </h1>
           </motion.div>
         </div>
@@ -191,7 +200,7 @@ return (
           <li className="resumeButton">
               <a href={Resume} target="_blank" rel="noopener noreferrer">
             <motion.div className="clickyButton">
-          VIEW MY CV
+              VIEW MY CV
             </motion.div></a>
           </li>
         </motion.div>

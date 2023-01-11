@@ -146,8 +146,10 @@ const menuItems = [...new Set(Data.map((Val) => Val.category))];
           exit={{ x: "140%", opacity: 0 }}
           >
             <div className="projects-column1">
-                <h3>{Val.title}</h3>
+              <div className='projects_column1'>
+                <h2>{Val.title}</h2>
                 <p>{Val.desc}</p>
+                <br />
                 <p>Frameworks, Libraries, Languages:</p>
                 <div className='tech-skills'>{Val.tech.map(item => (
                     <div className='tech-skills-text'>
@@ -155,7 +157,8 @@ const menuItems = [...new Set(Data.map((Val) => Val.category))];
                     </div>
                   ))}
                 </div>
-                <br />
+              </div>
+              <div className='projects_column2'>
                 <div className='projects__row_logos'>
                   <a className='projects__row_logos_a' href={Val.gitHubLink} target="_blank" rel="noopener noreferrer">
                   <img src={ GitHubImage } className="projects-link-image" alt = "GitHub social link"/> <p className='projects-link-image_text'>Source Code</p></a>
@@ -165,9 +168,16 @@ const menuItems = [...new Set(Data.map((Val) => Val.category))];
                     : null
                   }
                 </div>
+                </div>
               </div>
             <div className="project-column2">
-                <Carousel
+                <Carousel 
+                autoPlay
+                infiniteLoop
+                showArrows={true}
+                stopOnHover={true}
+                transitionTime={3}
+                thumbWidth={140}
                   className='image-carousel'>
                   {Val.img.map((item) => (
                   <div>
