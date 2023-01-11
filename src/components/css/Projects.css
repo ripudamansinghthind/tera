@@ -19,12 +19,15 @@
     font-size: 30px;
     margin-right: 100px;
     border-radius: 5px;
+    width: 100%;
+    border-bottom: 1px solid #E5E5E5;
 }
 
   .projects-column1 {
       float: left;
       width: 50%;
-      border-radius: 5px;
+      text-align: center;
+      border-right: 1px solid #E5E5E5;
   }
 
   .projects-column2 {

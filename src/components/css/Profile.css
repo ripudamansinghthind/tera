@@ -1,113 +1,40 @@
-.card {
-    text-align: center;
-    margin-top: 50px;
-    height: 100%;
-  }
-
-.profile-header {
-  font-size: 30px;
-  }
-
 .profile__row {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-row: 2;
-  place-items:  center;
-  margin-right: 100px;
-}
-
-.profile__row2 {
-  display: grid;
-  grid-row: 2;
-  place-items:  center;
-  border-radius: 5px;
-}
-
-.profile__column1{
-  
-}
-
-.profile__column2{
-  padding: 0 70px 0 0px;
+  display: flex;
+  width: 100%;
 }
 
 .image-cropper {
   overflow: hidden;
-  border-radius: 5%;
-  width: 310px;
-  height: 350px;
-  border: 1px solid black;
+  background-position: center;
+  background-position: 50% 50%;
+  width: 100%;
 }
 
-.image123 {
-  margin: 0 auto;
+.CEO__img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
 }
 
-  .title {
-    font-size: 18px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-
-  p {
-      font-size: 16px;
-  }
-
-.profile__content {
-  margin: 0 100px 0 0;
-  border-radius: 5px;
+.profile__column1 {
+  text-align: center;
+  width: 50%;
+  border-bottom: 1px solid #E5E5E5;
 }
 
-  @media only screen and (max-width: 768px) {
-    .card {
-      min-width: 350px;
-      max-width: 350px;
-      text-align: center;
-      font-size: 5px;
-      margin: 0 auto;
-      padding-bottom: 0;
-      display: block;
-    }
-    .image-cropper {
-      position: relative;
-      overflow: hidden;
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      padding-top: 0;
-      margin: 0 auto;
-  }
+.profile__column2 {
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  border-left: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
 
-  .CEO__title {
-    font-size: 30px;
-  }
+.CEO__title {
+  margin-top: 100px;
+}
 
-  .img__cropper_text {
-    margin: 0;
-    padding: 0;
-  }
-
-  .profile__row {
-    width: 100%;
-    display: block;
-  }
-
-  .profile__column1{
-    width: 100%;
-  }
-
-  .profile__column2{
-    width: 100%;
-    font-size: 20px;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
-  }
-
-  .profile__column2_text {
-    font-size: 15px;
-    padding: 0 20px 0 20px;
-  }
-
-  }
+.img__cropper_p {
+  font-size: 15px;
+}

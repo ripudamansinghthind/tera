@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import '../css/Profile.css'
 import { AnimatePresence, motion, MotionConfig } from 'framer-motion';
-import Typewriter from 'typewriter-effect';
 
 // Icons import
 import Img1 from '../Icons/FelixThindBGRem.png';
@@ -27,91 +26,37 @@ function Profile() {
 
 
   const [selectedImage, setSelectedImage] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (selectedImage === 1) {
-        setSelectedImage(0);
-        return;
-      }
-      setSelectedImage((prevValue) => {
-        if (prevValue === 1) {
-          return 1;
-        }
-        return prevValue + 1;
-      });
-    }, 4500);
-    return () => clearInterval(interval);
-  }, []);
 
 
   return (
     <>
-    <motion.div className="card" id="Profile"
-    initial={{x: "100%"}}
-    animate={{x: 0}}
-    transition={{
-      delay: 0.1,
-      x: { duration: 1 },
-      default: { ease: "linear" }
-    }}
-    exit={{ x: "100%", opacity: 0 }}
-    >
-      <div className="profile-header">
-      <h1>
-        <Typewriter
-          options={{
-            autoStart: true,
-            }}
-            onInit={(typewriter) => {
-              typewriter.typeString('Everything! ')
-                .pauseFor(1500)
-              typewriter.typeString('Everywhere! ')
-                .pauseFor(1500)
-              typewriter.typeString('Everyone!')
-                .start();
-            }}
-          />
-      </h1>
-      
-      </div>
-      <div className="profile__row">
+    <motion.div className="card" id="Profile">
+      <motion.div className="profile__row"
+          initial={{x: "130%"}}
+          animate={{x: 0}}
+          transition={{
+            delay: 0.5,
+            x: { duration: 1 },
+            default: { ease: "linear" }
+          }}
+          exit={{ x: "100%", opacity: 0 }}
+          >
         <div className='profile__column1'>
           <div className="image-cropper">
-            <MotionConfig transition={{ type: "tween", duration: 0.5 }}>
-              <AnimatePresence initial={false} mode="wait">
-                {images.map(
-                  (image, index) =>
-                    index === selectedImage && (
-                      <motion.img
-                        className="image123"
-                        key={image}
-                        style={{ y: 0 }}
-                        initial="hidden"
-                        animate="visible"
-                        exit="exiting"
-                        variants={variants}
-                        src={image}
-                        alt="src"
-                      />
-                    )
-                )}
-              </AnimatePresence>
-            </MotionConfig>
+            <img className='CEO__img'src={Img2} alt='CEO dp'/>
           </div>
         </div>
         <div className='profile__column2'>
-          <h1 className='CEO__title'>Name: Felix Thind</h1>
+          <h1 className='CEO__title'>FELIX THIND</h1>
+            <br />
             <div className='img__cropper_text'>
-              <p>Software Developer | Business | Tech</p>
-              <p className='img__cropper_p'>Surrey, BC</p>
+              <p className='img__cropper_p'>SOFTWARE DEVELOPER | BUSINESS | TECH</p>
               <br />
-              <p className='profile__column2_text'>Feel free to browse through my experience, projects or resume</p>
-            </div>
+              <p className='img__cropper_p'>VANCOUVER, BC</p>
+              <br />
+              </div>
           </div>
-      </div>
-      <div className="profile__row2">
-      </div>
-      
+      </motion.div>
       </motion.div>
     </>
   );

@@ -5,7 +5,7 @@ import '../css/Projects.css';
 import { motion } from 'framer-motion';
 
 //import images
-import GitHubImage from '../Icons/github.png';
+import GitHubImage from '../Icons/github.svg';
 import PlayImage from '../Icons/play.svg';
 import TeraImgLP from '../Icons/TeraSolutions - Landing Page.png';
 import TeraLogo from '../Icons/TeraSolutions - Logo.png';
@@ -115,19 +115,7 @@ const Projects = () => {
 const menuItems = [...new Set(Data.map((Val) => Val.category))];
 
   return (
-    <motion.div className='card'
-    initial={{x: "100%"}}
-    animate={{x: 0}}
-    transition={{
-      delay: 0.1,
-      x: { duration: 1 },
-      default: { ease: "linear" }
-    }}
-    exit={{ x: "100%", opacity: 0 }}
-    >
-      <div className="projects-header">
-        <h1>Projects</h1>
-      </div>
+    <motion.div className='card'>
       {/* <div className="projects-heading-row">
         <div className="projects-heading-column1">
           All Projects
@@ -145,9 +133,18 @@ const menuItems = [...new Set(Data.map((Val) => Val.category))];
       
       {Data.map((Val) => {
         return (
-        <div 
+        <motion.div 
           className="projects-row"
-          key={Val.id}>
+          key={Val.id}
+          initial={{x: "140%"}}
+          animate={{x: 0}}
+          transition={{
+            delay: 0.1,
+            x: { duration: 1 },
+            default: { ease: "linear" }
+          }}
+          exit={{ x: "140%", opacity: 0 }}
+          >
             <div className="projects-column1">
                 <h3>{Val.title}</h3>
                 <p>{Val.desc}</p>
@@ -180,7 +177,7 @@ const menuItems = [...new Set(Data.map((Val) => Val.category))];
                   ))}
                 </Carousel>
             </div>
-            </div>
+            </motion.div>
               );
             })}
     </motion.div>

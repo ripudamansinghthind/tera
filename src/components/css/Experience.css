@@ -9,32 +9,23 @@
     font-size: 30px;
     margin-right: 100px;
     border-radius: 5px;
+    width: 100%;
+    border-bottom: 1px solid #E5E5E5;
   }
   .experience-column-1 {
     margin-top: 50px;
-    width: 30%;
+    width: 40%;
     text-align: center;
   }
   .experience-column-2 {
-    margin-top: 70px;
-    box-shadow: -0.1em 0 0.4em rgba(0, 0, 0, 0.2);
-    width: 70%;
-    text-align: centre;
-    float: right;
+    border-left: 1px solid #E5E5E5;
+    width: 60%;
+    text-align: left;
+    padding: 50px;
   }
   
   .experience-card h1 {
       padding-top: 30px;
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-  }
-  
-  p {
-      font-size: 20px;
   }
   
   .company-website-experience {
@@ -63,21 +54,6 @@
       height: 100%;
       padding: 0;
       margin: 20px 0 20px 0;
-    }
-    .title {
-      font-size: 18px;
-    }
-    
-    a {
-      text-decoration: none;
-      font-size: 22px;
-      color: white;
-      margin: 0;
-    }
-    
-    p {
-        font-size: 20px;
-        margin: 0;
     }
     .experience-column-1 {
       width: 100%;

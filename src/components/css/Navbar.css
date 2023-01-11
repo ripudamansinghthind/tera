@@ -1,133 +1,95 @@
 @media only screen and (min-width: 768px) {
-  .logo-img {
-    width: 180px;
-    margin-top: 30px;
-    filter: invert(100%);
-    }
-    .navbar {
-      overflow: hidden;
-        position: fixed;
-        color: rgba(56, 102, 65);
-        left: 0;
-        top: 0;
-        padding: 0;
-        margin: 0;
-        width: 19.7%;
-        height: 100%;
-      color: black;
-    }
-    
-    .nav-content {
-      margin: 0;
-    }
 
-    .nav-text-diff {
-      margin-top: 100px;
-    }
+.logo-border {
+  height: 140px;
+  border-bottom: 1px solid #E5E5E5;
+}
 
-    .nav-items {
-      margin: 1rem 2rem 0 0;
-    }
-    
-    .nav-item {
-      display: block;
-      font-size: 50px;
-      color: black;
-      text-decoration: underline black;
-    }
-    
-    .clickyButton {
-      padding: 10px 15px;
-      color: black;
-    }
-    
-    .resumeButton {
-      display: block;
-      background-color: rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-      padding: 5px;
-    }
-    
-    .resumeButton a{
-      font-size: 18px;
-      text-decoration: none;
-    }
-
-    .nav__footer {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      width: 90%;
-      border-radius: 5px;
-    }
-
-    .social-images {
-      margin-bottom: 10px;
-    }
-    
-    .logo-img:hover {
-      opacity: 0.4;
-      transition: opacity 0.5s;
-      }
-    
-    .clickyButton:hover {
-      opacity: 0.4;
-      transition: opacity 0.5s;
-    }
-    
-    .nav-item a:hover {
-      text-decoration: none;
-      color: black;
-    }
-    
-    .resumeButton:hover {
-      color: grey;
-      transition: color 0.5s;
-    }
-    
-    .resumeButton a:hover {
-      text-decoration: none;
-      color: black;
-    }
-
-    .image-socials {
-      margin-top: 10px;
-      height: 30px;
-      transition: transform 0.2s ease;
+.logo-img {
+  width: 250px;
+  height: 120px;
+  filter: invert(100%);
   }
 
-  .image-socials_github {
-    margin-top: 10px;
-    height: 30px;
-    transition: transform 0.2s ease;
+.navbar {
 }
-  
-  .social-images a {
-      margin: 0 15px;
+
+.nav-content {
+  margin: 0;
+  padding: 0;
+}
+    
+.nav-item {
+  display: block;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 30px 0;
+}
+
+.nav-items {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.clickyButton {
+  padding: 10px 15px;
+}
+
+.resumeButton {
+  display: block;
+  padding: 10px 15px;
+}
+
+.resumeButton a{
+  text-decoration: none;
+  color: #C7C7C7;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+.logo-img:hover {
+  opacity: 0.4;
+  transition: opacity 0.5s;
   }
-  
-  .image-socials:hover {
-      opacity: 0.4;
-      transition: opacity 0.5s;
-  }
 
-  .image-socials_github:hover {
-    opacity: 0.4;
-    transition: opacity 0.5s;
+.nav-item:hover {
+  text-decoration: none;
+  color: #E5E5E5;
+  background-color: #7F7F7F;
+  transition: background-color 1s;
 }
 
-  .footer-a {
-    display: inline-block;
-    font-size: 9px;
-    padding: 0 !important;
-    margin: 0 !important;
-    text-decoration: underline;
-    transition: transform 0.2s ease;
+.resumeButton:hover {
+  color: #E5E5E5;
+  background-color: #7F7F7F;
+  transition: background-color 1s;
 }
 
-.nav__footer_text {
-  font-size: 15px;
+.image-socials_mail {
+  height: 30px;
+  opacity: 0.5;
 }
+
+.image-socials_linkedin {
+  height: 30px;
+  opacity: 0.5;
+}
+
+.image-socials_github {
+  height: 33px;
+  opacity: 0.5;
+}
+
+.social-images a {
+    margin: 0 15px;
+}
+
+.image-socials_github:hover, .image-socials_linkedin:hover, .image-socials_mail:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
 }
 
 
